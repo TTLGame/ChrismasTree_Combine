@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldView" customModule="LongTester" customModuleProvider="target">
+            <connections>
+                <outlet property="invalidView" destination="igL-2g-o0W" id="hkQ-Fq-kbZ"/>
+                <outlet property="labelView" destination="omO-TU-BVz" id="qhX-tW-Fh4"/>
+                <outlet property="textFieldView" destination="NcK-17-PqO" id="rip-O0-rQg"/>
+                <outlet property="titleLbl" destination="sKJ-mk-Si9" id="eHC-Zg-Eli"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zlX-hB-oiq">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y38-xa-2QP">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ua5-ce-rju" userLabel="TextView">
+                            <rect key="frame" x="0.0" y="0.0" width="363.66666666666669" height="98"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NcK-17-PqO">
+                                    <rect key="frame" x="10" y="10" width="343.66666666666669" height="88"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omO-TU-BVz" userLabel="LabelView">
+                                    <rect key="frame" x="30.000000000000004" y="10" width="45.333333333333343" height="9"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKJ-mk-Si9">
+                                            <rect key="frame" x="5" y="-8" width="35.333333333333336" height="17"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="sKJ-mk-Si9" secondAttribute="bottom" id="GbF-Zu-zxD"/>
+                                        <constraint firstItem="sKJ-mk-Si9" firstAttribute="top" secondItem="omO-TU-BVz" secondAttribute="top" constant="-8" id="Gfg-76-FmE"/>
+                                        <constraint firstItem="sKJ-mk-Si9" firstAttribute="leading" secondItem="omO-TU-BVz" secondAttribute="leading" constant="5" id="OmY-xQ-Nmk"/>
+                                        <constraint firstAttribute="trailing" secondItem="sKJ-mk-Si9" secondAttribute="trailing" constant="5" id="PRO-cA-Ani"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="NcK-17-PqO" secondAttribute="trailing" constant="10" id="IzR-Lb-f4O"/>
+                                <constraint firstItem="NcK-17-PqO" firstAttribute="leading" secondItem="ua5-ce-rju" secondAttribute="leading" constant="10" id="Jg4-7A-MsC"/>
+                                <constraint firstItem="omO-TU-BVz" firstAttribute="leading" secondItem="ua5-ce-rju" secondAttribute="leading" constant="30" id="OgA-mb-caW"/>
+                                <constraint firstAttribute="bottom" secondItem="NcK-17-PqO" secondAttribute="bottom" id="bax-pN-zNy"/>
+                                <constraint firstItem="omO-TU-BVz" firstAttribute="top" secondItem="NcK-17-PqO" secondAttribute="top" id="gS5-I3-bdC"/>
+                                <constraint firstItem="NcK-17-PqO" firstAttribute="top" secondItem="ua5-ce-rju" secondAttribute="top" constant="10" id="uh3-qc-X8L"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igL-2g-o0W">
+                            <rect key="frame" x="363.66666666666669" y="0.0" width="29.333333333333314" height="98"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCi-aw-Zgc">
+                                    <rect key="frame" x="0.0" y="34.333333333333336" width="29.333333333333332" height="29.333333333333336"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="SCi-aw-Zgc" secondAttribute="height" id="U2t-YN-gmW"/>
+                                    </constraints>
+                                    <color key="tintColor" red="0.79215686269999996" green="0.2156862745" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="exclamationmark.triangle.fill" catalog="system"/>
+                                    <connections>
+                                        <action selector="invalidBtnPressed:" destination="-1" eventType="touchUpInside" id="lce-T0-NoT"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="SCi-aw-Zgc" firstAttribute="centerY" secondItem="igL-2g-o0W" secondAttribute="centerY" id="0ve-yK-Usd"/>
+                                <constraint firstItem="SCi-aw-Zgc" firstAttribute="leading" secondItem="igL-2g-o0W" secondAttribute="leading" id="IMU-Jm-YSZ"/>
+                                <constraint firstAttribute="trailing" secondItem="SCi-aw-Zgc" secondAttribute="trailing" id="d21-p8-IpK"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SCi-aw-Zgc" firstAttribute="height" secondItem="Y38-xa-2QP" secondAttribute="height" multiplier="0.3" id="PWA-8h-BN0"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Y38-xa-2QP" secondAttribute="trailing" id="Bix-bE-28n"/>
+                <constraint firstAttribute="bottom" secondItem="Y38-xa-2QP" secondAttribute="bottom" id="Geu-Vi-UYV"/>
+                <constraint firstItem="Y38-xa-2QP" firstAttribute="top" secondItem="zlX-hB-oiq" secondAttribute="top" id="JfY-GQ-jDa"/>
+                <constraint firstItem="Y38-xa-2QP" firstAttribute="leading" secondItem="zlX-hB-oiq" secondAttribute="leading" id="Ybv-sr-wnq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-816.03053435114498" y="-600"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="109"/>
+    </resources>
+</document>

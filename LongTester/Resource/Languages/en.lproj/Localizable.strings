@@ -1,0 +1,118 @@
+/* 
+  Localizable.strings
+  LongTester
+
+  Created by Long on 12/29/22.
+  
+*/
+//Error
+"systemError" = "There is something wrong with the system. Please try again later.";
+"internetError" = "Please check your internet connection and try again";
+
+"welcome" = "Welcome";
+"vietnamese" = "Vietnamese";
+"english" = "English";
+"noData" = "No Data Found";
+"doneBtn" = "Done";
+"cancelBtn" = "Cancel";
+"editStatusBtn"  = "Edit Status";
+
+//Login View
+"username" = "Email";
+"password" = "Password";
+"confirmPass" = "Confirm password";
+"fullname" = "Full name";
+"phone" = "Phone";
+"birthday" = "Birthday";
+"login" = "Login";
+"registerAccount" = "Register account";
+"registerForm" = "Register Form";
+"male" = "Male";
+"female" = "Female";
+"isRequired" = "this field is required";
+
+//Regex
+"regexMail" = "Not correct email format";
+"regexPhone" = "Not correct phone format";
+"errorValidation" = "There is some error in field validations, please try again.";
+
+//Main View
+"mainTitle" = "Manage Location";
+"shortRoom" = "room(s) paid";
+"fullRoom" = "Full room";
+"popupCreateAddressTitle" = "Address Form";
+"addressPopup" = "Address";
+"totalRoomPopUp" = "Rooms";
+"quota" = "Quota";
+"quotaPrice" = "Quota price";
+"waterPrice" = "Water price";
+"electricPrice" = "Electric price";
+"roomPrice" = "Room price";
+"addressName" = "Address Name";
+"fillError" = "Please fill out all required fields.";
+"delete" = "Delete";
+"deleteContent" = "You sure you want to delete this address?";
+//Hamburger Menu
+"logout" = "Log out";
+"hello" = "Hello, ";
+
+//AddressCollectionView
+"addressCollectionMainTitle" = "Address Detail";
+"roomNums" = "Room: ";
+"renters" = "Renters: ";
+"waterCell" = "Water: ";
+"electricCell" = "Electric: ";
+"totalCell" = "Total: ";
+"yesSymbolText" = "Paid";
+"noSymbolText" = "Not Paid";
+"pendingSymbolText" = "Pending";
+"vacancySymbolText" = "Vacancy";
+
+//Detail Screen
+"roomDetailTitle" = "Room Detail";
+
+//Radio
+"radioAll" = "All data";
+"radioUnPaid" = "Un-paid";
+"radioPaid" = "Paid";
+"radioVancancy" = "Vacancy";
+
+//Detail Screen
+"getInfo" = "Address's info";
+"addData" = "Add Data";
+
+//AddressInfo
+"address" = "Address: ";
+"totalRoom" = "Total Rooms: ";
+"averageRenters" = "Average Renters: ";
+"globalWater" = "Common water price/(m3): ";
+"globalElectric" = "Common electric price/(kwh): ";
+"globalPrice" = "Common rent price: ";
+
+"averageWaterComsumption" = "Average Water Coms: ";
+"waterUnit" = "Water price/(m3) :";
+"totalWaterComsumption" = "Total Water Coms: ";
+
+"averageElectricComsumption" = "Average Electric Coms: ";
+"electricUnit" = "Electric price/(kwh) :";
+"totalElectricComsumption" = "Total Electric Coms: ";
+
+"averageIncome" = "Average Income";
+"totalRent" = "Total Rent: ";
+
+"facilityInfo" = "Facility Info";
+"consumptionInfo" = "Consumption Info";
+
+//Address All Room Info
+"generalInfo" = "General Info";
+"roomsInfo" = "Room Info";
+"water" = "Water";
+"electric" = "Electric";
+"trashFee" = "Trash fee";
+"internetFee" = "Internet fee";
+"roomPrice" = "Room price";
+"total" = "Total";
+"room" = "Room";
+"errorInvalidData" = "Invalid input numbers. Please check again";
+"understand" = "Understand";
+"paid" = "Paid";

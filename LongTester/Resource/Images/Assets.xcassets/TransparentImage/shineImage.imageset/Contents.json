@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "shine-transparent-png-light-shine-effect-shine-images-free-download--free-transparent-png-logos.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "shine-transparent-png-light-shine-effect-shine-images-free-download--free-transparent-png-logos 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "shine-transparent-png-light-shine-effect-shine-images-free-download--free-transparent-png-logos 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

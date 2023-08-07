@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SegmentControl" customModule="LongTester" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="HuL-Gv-23U" id="Zf3-6R-Ico"/>
+                <outlet property="segCollectionView" destination="sI5-g9-g1q" id="V1a-Kk-Y7x"/>
+                <outlet property="slideMenuWidthConstraint" destination="Etd-hp-4Bi" id="WkG-g4-tKv"/>
+                <outlet property="slideView" destination="fwZ-n1-QPs" id="a7X-Ka-4LA"/>
+                <outlet property="slideViewLeftConstraint" destination="io2-c1-8sB" id="Yau-yR-5sn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="84"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuL-Gv-23U" userLabel="BGView">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="84"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwZ-n1-QPs" userLabel="SlideView">
+                    <rect key="frame" x="0.0" y="0.0" width="10" height="84"/>
+                    <color key="backgroundColor" red="0.792156862745098" green="0.21568627450980393" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="Etd-hp-4Bi"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="sI5-g9-g1q">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="84"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Yjz-Z2-DSc">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="HuL-Gv-23U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0pj-JK-DdB"/>
+                <constraint firstAttribute="trailing" secondItem="sI5-g9-g1q" secondAttribute="trailing" id="I6s-yH-Gej"/>
+                <constraint firstAttribute="bottom" secondItem="HuL-Gv-23U" secondAttribute="bottom" id="Jll-vZ-olp"/>
+                <constraint firstAttribute="trailing" secondItem="HuL-Gv-23U" secondAttribute="trailing" id="Kkz-U3-269"/>
+                <constraint firstItem="HuL-Gv-23U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NG0-Ur-K6A"/>
+                <constraint firstItem="sI5-g9-g1q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RR2-Ku-3aO"/>
+                <constraint firstItem="sI5-g9-g1q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RvF-Oa-9EX"/>
+                <constraint firstItem="fwZ-n1-QPs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xba-3n-h8Z"/>
+                <constraint firstAttribute="bottom" secondItem="sI5-g9-g1q" secondAttribute="bottom" id="cpH-bi-pim"/>
+                <constraint firstItem="fwZ-n1-QPs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="io2-c1-8sB"/>
+                <constraint firstItem="fwZ-n1-QPs" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="rbB-gL-c7d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="64.885496183206101" y="290.84507042253523"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

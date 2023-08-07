@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MonthYearView" customModule="LongTester" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="93U-1T-5cr" id="wZS-nc-2xT"/>
+                <outlet property="contentView" destination="q4v-lJ-euf" id="EtW-nM-kbK"/>
+                <outlet property="doneBtn" destination="zQJ-l3-n66" id="gMn-Ip-OWf"/>
+                <outlet property="monthYearPickView" destination="dSx-UA-azd" id="pNZ-y7-p3J"/>
+                <outlet property="sheetHeightConstraint" destination="YFi-gH-0tA" id="aSu-zs-mmY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWS-RX-U86" userLabel="BackgroundView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4v-lJ-euf" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="268" width="320" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4H-E9-69U" userLabel="ToolBarView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQJ-l3-n66">
+                                    <rect key="frame" x="261" y="8" width="44" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Done"/>
+                                    <connections>
+                                        <action selector="doneBtnPressed:" destination="-1" eventType="touchUpInside" id="K0u-9Y-sQE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93U-1T-5cr" userLabel="Cancel">
+                                    <rect key="frame" x="15" y="8" width="43" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Done"/>
+                                    <connections>
+                                        <action selector="cancelBtnPressed:" destination="-1" eventType="touchUpInside" id="dRa-wb-40e"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="T58-7g-lSa"/>
+                                <constraint firstItem="93U-1T-5cr" firstAttribute="centerY" secondItem="q4H-E9-69U" secondAttribute="centerY" id="iBp-oB-SDK"/>
+                                <constraint firstItem="zQJ-l3-n66" firstAttribute="centerY" secondItem="q4H-E9-69U" secondAttribute="centerY" id="k9m-c3-D8t"/>
+                                <constraint firstItem="93U-1T-5cr" firstAttribute="leading" secondItem="q4H-E9-69U" secondAttribute="leading" constant="15" id="qrh-i8-lvq"/>
+                                <constraint firstAttribute="trailing" secondItem="zQJ-l3-n66" secondAttribute="trailing" constant="15" id="z27-Hx-zS7"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSx-UA-azd" userLabel="datepick" customClass="MonthYearPickerView" customModule="LongTester" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="50" width="320" height="250"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.81568627450980391" green="0.82745098039215681" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dSx-UA-azd" secondAttribute="trailing" id="BkU-Hc-XRM"/>
+                        <constraint firstItem="dSx-UA-azd" firstAttribute="top" secondItem="q4H-E9-69U" secondAttribute="bottom" id="EjT-jv-vhm"/>
+                        <constraint firstItem="q4H-E9-69U" firstAttribute="top" secondItem="q4v-lJ-euf" secondAttribute="top" id="MCG-BZ-vCM"/>
+                        <constraint firstAttribute="height" constant="300" id="YFi-gH-0tA"/>
+                        <constraint firstAttribute="trailing" secondItem="q4H-E9-69U" secondAttribute="trailing" id="fZg-ec-ygo"/>
+                        <constraint firstItem="q4H-E9-69U" firstAttribute="leading" secondItem="q4v-lJ-euf" secondAttribute="leading" id="l06-bz-am1"/>
+                        <constraint firstAttribute="bottom" secondItem="dSx-UA-azd" secondAttribute="bottom" id="lHO-9w-3LB"/>
+                        <constraint firstItem="dSx-UA-azd" firstAttribute="leading" secondItem="q4v-lJ-euf" secondAttribute="leading" id="yck-a9-07H"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="q4v-lJ-euf" secondAttribute="trailing" id="O8u-er-qr6"/>
+                <constraint firstItem="q4v-lJ-euf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="On3-nh-vNs"/>
+                <constraint firstAttribute="bottom" secondItem="RWS-RX-U86" secondAttribute="bottom" id="eHb-Pw-YPW"/>
+                <constraint firstItem="RWS-RX-U86" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kpn-gl-hCK"/>
+                <constraint firstAttribute="bottom" secondItem="q4v-lJ-euf" secondAttribute="bottom" id="shO-eE-ffo"/>
+                <constraint firstAttribute="trailing" secondItem="RWS-RX-U86" secondAttribute="trailing" id="ufT-Pd-VrD"/>
+                <constraint firstItem="RWS-RX-U86" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xah-4e-Z9x"/>
+            </constraints>
+            <point key="canvasLocation" x="43.511450381679388" y="64.436619718309856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

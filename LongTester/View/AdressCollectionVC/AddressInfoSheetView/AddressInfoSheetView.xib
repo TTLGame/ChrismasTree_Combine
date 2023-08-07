@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21507"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressInfoSheetView" customModule="LongTester" customModuleProvider="target">
+            <connections>
+                <outlet property="pageView" destination="QU7-Sd-XAB" id="hGM-6f-GxH"/>
+                <outlet property="segmentControl" destination="Cre-UM-Tbu" id="OhK-gj-p11"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mf5-yZ-5ve" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cre-UM-Tbu" customClass="SegmentControl" customModule="LongTester" customModuleProvider="target">
+                            <rect key="frame" x="30" y="5" width="315" height="25"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="3EF-Ht-0rb"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QU7-Sd-XAB" customClass="PageView" customModule="LongTester" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="35" width="375" height="632"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="QU7-Sd-XAB" firstAttribute="leading" secondItem="Mf5-yZ-5ve" secondAttribute="leading" id="0tE-Gu-2WY"/>
+                        <constraint firstAttribute="bottom" secondItem="QU7-Sd-XAB" secondAttribute="bottom" id="RwM-3a-5qe"/>
+                        <constraint firstItem="Cre-UM-Tbu" firstAttribute="top" secondItem="Mf5-yZ-5ve" secondAttribute="top" constant="5" id="VTj-eV-T0c"/>
+                        <constraint firstAttribute="trailing" secondItem="Cre-UM-Tbu" secondAttribute="trailing" constant="30" id="eGd-DS-K7o"/>
+                        <constraint firstAttribute="trailing" secondItem="QU7-Sd-XAB" secondAttribute="trailing" id="n2q-Te-clK"/>
+                        <constraint firstItem="QU7-Sd-XAB" firstAttribute="top" secondItem="Cre-UM-Tbu" secondAttribute="bottom" constant="5" id="sYy-Pa-jDl"/>
+                        <constraint firstItem="Cre-UM-Tbu" firstAttribute="leading" secondItem="Mf5-yZ-5ve" secondAttribute="leading" constant="30" id="zka-Db-OAA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Mf5-yZ-5ve" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4d4-h4-Ani"/>
+                <constraint firstAttribute="bottom" secondItem="Mf5-yZ-5ve" secondAttribute="bottom" id="6DC-em-fec"/>
+                <constraint firstItem="Mf5-yZ-5ve" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Mn0-LD-GgI"/>
+                <constraint firstAttribute="trailing" secondItem="Mf5-yZ-5ve" secondAttribute="trailing" id="qsF-9C-Q47"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="45" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

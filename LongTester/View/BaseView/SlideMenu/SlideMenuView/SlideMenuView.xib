@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SlideMenuView" customModule="LongTester" customModuleProvider="target">
+            <connections>
+                <outlet property="_contentView" destination="zYY-ZK-NZ4" id="hft-n5-WP3"/>
+                <outlet property="backgroundView" destination="uiG-3G-H47" id="u5M-5d-RcA"/>
+                <outlet property="sideMenuView" destination="2F8-Vj-zCU" id="shi-nh-Z5t"/>
+                <outlet property="sideMenuWidthConstraint" destination="67E-iO-62u" id="0ij-k4-Noi"/>
+                <outlet property="slideMenuLeadingContraint" destination="YdE-Eq-BuW" id="ecE-yV-ByS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="zYY-ZK-NZ4">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiG-3G-H47" userLabel="BackGround">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2F8-Vj-zCU" customClass="SubSlideMenuView" customModule="LongTester" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="0.0" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="67E-iO-62u"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rYA-K8-veH"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uiG-3G-H47" firstAttribute="leading" secondItem="rYA-K8-veH" secondAttribute="leading" id="I2i-dj-l2h"/>
+                <constraint firstItem="uiG-3G-H47" firstAttribute="trailing" secondItem="rYA-K8-veH" secondAttribute="trailing" id="QiV-0s-Dr8"/>
+                <constraint firstItem="rYA-K8-veH" firstAttribute="bottom" secondItem="uiG-3G-H47" secondAttribute="bottom" id="U3M-0b-DIh"/>
+                <constraint firstItem="rYA-K8-veH" firstAttribute="bottom" secondItem="2F8-Vj-zCU" secondAttribute="bottom" id="Y2b-EF-iL3"/>
+                <constraint firstItem="2F8-Vj-zCU" firstAttribute="leading" secondItem="rYA-K8-veH" secondAttribute="leading" id="YdE-Eq-BuW"/>
+                <constraint firstItem="2F8-Vj-zCU" firstAttribute="top" secondItem="rYA-K8-veH" secondAttribute="top" id="pNu-aN-Kf1"/>
+                <constraint firstItem="uiG-3G-H47" firstAttribute="top" secondItem="rYA-K8-veH" secondAttribute="top" id="sND-Xm-h4Q"/>
+            </constraints>
+            <point key="canvasLocation" x="125.95419847328243" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

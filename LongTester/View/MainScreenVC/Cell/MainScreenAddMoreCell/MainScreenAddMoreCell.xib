@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="178" id="KGk-i7-Jjw" customClass="MainScreenAddMoreCell" customModule="LongTester" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRU-Mf-wiM" userLabel="clickView">
+                        <rect key="frame" x="10" y="10" width="355" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.square.dashed" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="S9c-yY-n7u">
+                                <rect key="frame" x="157.66666666666666" y="41.666666666666664" width="40" height="36.999999999999993"/>
+                                <color key="tintColor" red="0.79215686269999996" green="0.2156862745" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="KZT-jI-6il"/>
+                                    <constraint firstAttribute="width" secondItem="S9c-yY-n7u" secondAttribute="height" id="XdY-lz-ZrZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S9c-yY-n7u" firstAttribute="centerY" secondItem="cRU-Mf-wiM" secondAttribute="centerY" id="3Ty-d7-OGf"/>
+                            <constraint firstItem="S9c-yY-n7u" firstAttribute="centerX" secondItem="cRU-Mf-wiM" secondAttribute="centerX" id="9pp-If-BWP"/>
+                            <constraint firstAttribute="height" constant="120" id="fLy-x4-4gG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cRU-Mf-wiM" secondAttribute="trailing" constant="10" id="5UB-ZB-NlO"/>
+                    <constraint firstItem="cRU-Mf-wiM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="CBR-I9-BgG"/>
+                    <constraint firstItem="cRU-Mf-wiM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Nmp-28-utv"/>
+                    <constraint firstAttribute="bottom" secondItem="cRU-Mf-wiM" secondAttribute="bottom" constant="10" id="gnx-nH-qya"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="clickView" destination="cRU-Mf-wiM" id="dCu-2D-MsX"/>
+            </connections>
+            <point key="canvasLocation" x="61.832061068702288" y="47.887323943661976"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plus.square.dashed" catalog="system" width="128" height="114"/>
+    </resources>
+</document>

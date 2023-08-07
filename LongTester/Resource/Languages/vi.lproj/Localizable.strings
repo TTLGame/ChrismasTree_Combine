@@ -1,0 +1,119 @@
+/* 
+  Localizable.strings
+  LongTester
+
+  Created by Long on 12/29/22.
+  
+*/
+
+//Error
+"systemError" = "Hệ thống hiện tại đang gặp trở ngại. Vui lòng thử lại sau";
+"internetError" = "Vui lòng kiểm tra lại đường truyền mạng của bạn";
+
+"welcome" = "Xin chào";
+"vietnamese" = "Việt Nam";
+"english" = "Tiếng Anh";
+"noData" = "Không có dữ liệu";
+"doneBtn" = "Xong";
+"cancelBtn" = "Hủy bỏ";
+"editStatusBtn"  = "Sửa tr/thái";
+
+//Login View
+"username" = "Email";
+"password" = "Mật khẩu";
+"confirmPass" = "Xác nhận mật khẩu";
+"fullname" = "Họ tên";
+"phone" = "Điện thoại";
+"birthday" = "Ngày sinh";
+"login" = "Đăng nhập";
+"registerAccount" = "Tạo tài khoản";
+"registerForm" = "Đăng kí";
+"male" = "Nam";
+"female" = "Nữ";
+"isRequired" = "Thông tin bắt buộc";
+
+//Regex
+"regexMail" = "Không đúng định dạng mail";
+"regexPhone" = "Không đúng định dạng điện thoại";
+"errorValidation" = "Xảy ra lỗi xác thực, vui lòng kiểm tra lại";
+
+//Main View
+"mainTitle" = "Quản lí địa điểm";
+"shortRoom" = "phòng đã thu";
+"fullRoom" = "Đủ phòng";
+"popupCreateAddressTitle" = "Form địa chỉ";
+"addressPopup" = "Địa chỉ";
+"totalRoomPopUp" = "Số phòng";
+"quota" = "Định mức";
+"quotaPrice" = "Giá định mức";
+"waterPrice" = "Giá nước";
+"electricPrice" = "Giá điện";
+"roomPrice" = "Giá phòng";
+"addressName" = "Tên cơ sở";
+"fillError" = "Vui lòng nhập đủ các trường cần thiết.";
+"delete" = "Xóa";
+"deleteContent" = "Bạn có chắc chắc muốn xóa địa chỉ này không?";
+//Hamburger Menu
+"logout" = "Đăng xuất";
+"hello" = "Xin chào, ";
+
+//AddressCollectionView
+"addressCollectionMainTitle" = "Thông tin cụ thể";
+"roomNums" = "Phòng: ";
+"renters" = "Người ở: ";
+"waterCell" = "Số nước: ";
+"electricCell" = "Số điện: ";
+"totalCell" = "Tổng: ";
+"yesSymbolText" = "Đã trả";
+"noSymbolText" = "Chưa trả";
+"pendingSymbolText" = "Chưa giải quyết";
+"vacancySymbolText" = "Trống phòng";
+
+//Detail Screen
+"roomDetailTitle" = "Chi tiết phòng";
+
+//Radio
+"radioAll" = "Tất cả";
+"radioUnPaid" = "Chưa trả";
+"radioPaid" = "Đã trả";
+"radioVancancy" = "Trống";
+
+//Detail Screen
+"getInfo" = "Thông tin cụ thể";
+"addData" = "Thêm data";
+
+//AddressInfo
+"address" = "Địa chỉ: ";
+"totalRoom" = "Tổng phòng: ";
+"averageRenters" = "T/B người thuê: ";
+"globalWater" = "Giá nước chung/(m3): ";
+"globalElectric" = "Giá điện chung/(kwh): ";
+"globalPrice" = "Giá phòng chung: ";
+
+"averageWaterComsumption" = "T/B nước tiêu thụ: ";
+"waterUnit" = "Giá nước/(m3) :";
+"totalWaterComsumption" = "Tổng nước tiêu thụ ";
+
+"averageElectricComsumption" = "T/B điện tiêu thụ: ";
+"electricUnit" = "Giá điện/(kwh) :";
+"totalElectricComsumption" = "Tổng điện tiêu thụ ";
+
+"averageIncome" = "T/B thu nhập";
+"totalRent" = "Tổng tiền: ";
+
+"facilityInfo" = "Thông tin cơ sở";
+"consumptionInfo" = "Thông tin tiêu thụ";
+
+//Address All Room Info
+"generalInfo" = "Thông tin chung";
+"roomsInfo" = "Thông tin phòng";
+"water" = "Nước";
+"electric" = "Điện";
+"trashFee" = "Tiền rác";
+"internetFee" = "Tiền internet";
+"roomPrice" = "Tiền phòng";
+"total" = "Tổng tiền";
+"room" = "Phòng";
+"errorInvalidData" = "Thông tin nhập sai. Vui lòng kiểm tra lại.";
+"understand" = "Đã hiểu";
+"paid" = "Đã trả";
